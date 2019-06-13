@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6
 .section-title
 	font-size: rem(30px)
 	font-family: $titleFont
-	color: #222222
+	color: $textColor
 	text-align: center
 	margin-bottom: rem(74px)
 
@@ -24,7 +24,20 @@ h1, h2, h3, h4, h5, h6
 	border: none
 	width: rem(86px)
 	height: 2px
-	background-color: #222222
+	background-color: $textColor
 	display: block
 	margin: 0 auto
 	margin-bottom: rem(78px)
+
+.button
+	display: inline-block
+	padding: rem(36px) rem(100px)
+	border: 3px solid #fff
+	font-family: $fontBold
+	font-size: rem(30px)
+	color: #fff
+	text-decoration: none
+	transition: color .25s ease, background-color .25s ease
+	&:hover
+		background-color: #fff
+		color: $textColor
