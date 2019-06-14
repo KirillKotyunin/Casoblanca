@@ -1,0 +1,90 @@
+.works
+  padding: rem(120px) 0 rem(80px) 0
+  text-align: center
+.works-categories
+  +notList
+  text-align: center
+  &-item 
+    color: $textColor
+    font-family: $slimFont
+    display: inline-block
+    font-size: rem(18px)
+    margin-right: rem(35px)
+    cursor: pointer
+    text-transform: uppercase
+    font-weight: 700
+    &_active
+      font-family: $titleFont
+    &:last-child
+      margin-right: 0
+.works-list
+  +notList
+  margin-top: rem(85px)
+  display: flex 
+  justify-content: space-between
+  align-items: flex-start
+  flex-flow: row wrap
+.work-item
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  width: 32%
+  height: rem(420px)
+  margin-bottom: rem(20px)
+  position: relative
+  text-align: center
+  display: flex
+  justify-content: center
+  align-items: center 
+  flex-flow: column wrap
+  &__content
+    position: relative
+    opacity: 0
+    transition: opacity .3s ease
+  &__category
+    font-family: $titleFont
+    font-size: 18px
+    text-transform: uppercase
+    margin-bottom: rem(25px)
+  &__title
+    font-size: 24px
+    font-family: $font
+    margin-bottom: rem(32px)
+  &__decoration-line
+    display: inline-block
+    border: none
+    width: rem(48px)
+    height: 2px
+    background-color: #d87843
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#000,.75)
+    border: 8px solid #000
+    box-sizing: border-box
+    opacity: 0
+    transition: opacity .3s ease
+  &:hover
+    cursor: pointer
+    .work-item__content
+      opacity: 1
+    &::before
+      opacity: 1
+.works-btn
+  font-family: $fontBold
+  font-size: rem(24px)
+  border: 3px solid $textColor
+  padding: rem(18px) rem(95px)
+  text-decoration: none
+  color: $textColor
+  display: inline-block
+  margin-top: rem(78px)
+  transition: background-color .25s ease, color .25s ease
+  &:hover
+    background-color: $textColor
+    color: #fff
