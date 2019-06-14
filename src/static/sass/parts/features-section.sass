@@ -1,0 +1,38 @@
+.features
+  padding: rem(120px) 0 rem(130px) 0
+  text-align: center
+
+.features-list
+  margin-top: rem(100px)
+  display: flex 
+  align-items: center
+.features-item
+  color: $textColor
+  outline: none
+  margin: 0 rem(15px)
+  &__title
+    margin: rem(40px) 0
+  &__descr
+    font-size: rem(18px)
+    line-height: rem(30px)
+    font-family: $font
+  &__image
+    margin: 0 auto
+    display: flex
+    align-items: flex-end
+    min-height: 160px
+    img 
+      display: block
+      max-width: 100%
+      height: auto
+      margin: 0 auto
+
+.slick-dots
+  bottom: -75px
+.slick-dots li button:before
+  color: #d5d5d5
+  opacity: 1
+  font-size: 12px
+.slick-dots li.slick-active button:before
+  color: #d87843
+  opacity: 1
