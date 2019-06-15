@@ -1,0 +1,93 @@
+.contacts
+  padding: rem(120px) 0
+  background-color: #e4e4e4
+  color: $textColor
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 38.5%
+    height: 100%
+    display: block
+    background-color: #f2f2f2
+  .container
+    display: flex
+    justify-content: space-between
+    position: relative
+.location
+  font-family: $fontLight
+  &-title
+    font-size: rem(24px)
+    font-family: $titleFont
+    text-transform: uppercase
+    margin-bottom: rem(42px)
+  &-string
+    font-family: $fontLight
+    font-size: rem(22px)
+    font-style: italic
+    margin-bottom: rem(22px)
+  &-social
+    +notList
+    &__item
+      display: inline-block
+      margin-right: rem(30px)
+      margin-bottom: rem(10px)
+      &::last-child
+        margin-right: 0
+    &__link
+      display: block
+      text-decoration: none
+      outline: none
+.callback
+  max-width: 55%
+  width: 100%
+  &-inputs
+    display: flex
+    justify-content: space-between
+    width: 100%
+    margin-bottom: rem(100px)
+  &-input
+    border: none
+    max-width: 42%
+    width: 100%
+    background-color: transparent
+    outline: none
+    font-family: $font
+    font-style: italic
+    font-size: rem(18px)
+    padding: rem(15px) rem(25px)
+    border-bottom: 2px solid #afafaf
+  &-message
+    border:
+      top: none
+      right: none
+      left: none
+    width: 100%
+    margin-bottom: rem(40px)
+    background-color: transparent
+    outline: none
+    font-family: $font
+    font-style: italic
+    font-size: rem(18px)
+    padding: rem(15px) rem(25px)
+    border-bottom: 2px solid #afafaf
+  &-submit
+    display: block
+    border: none
+    background-color: transparent
+    font-family: $fontBold
+    padding: rem(15px) rem(62px)
+    font-size: rem(24px)
+    outline: none
+    border: 3px solid $textColor
+    color: $textColor
+    transition: background-color .3s ease, color .3s ease
+    margin: 0 0 0 auto
+    &:hover
+      background-color: $textColor
+      color: #fff
+
+
+

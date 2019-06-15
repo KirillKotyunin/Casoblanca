@@ -159,6 +159,37 @@ block content
 			hr.title-line
 			p.section-descr.
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+	section.contacts
+		.container
+			.location
+				.location-title OUR LOCATION
+				.location-string 174 mimosa ST. NW
+				.location-string Casablanca, MA 20370
+				.location-string (212) 123 456 7
+				.location-string Samir Timezguida
+				ul.location-social
+					li.location-social__item
+						a(href="#").location-social__link
+							img(src="img/social/twitter.svg", alt="twitter-icon")
+					li.location-social__item
+						a(href="#").location-social__link
+							img(src="img/social/facebook.svg", alt="facebook-icon")
+					li.location-social__item
+						a(href="#").location-social__link
+							img(src="img/social/linkedin.svg", alt="linkedin-icon")
+					li.location-social__item
+						a(href="#").location-social__link
+							img(src="img/social/vimeo.svg", alt="vimeo-icon")
+					li.location-social__item
+						a(href="#").location-social__link
+							img(src="img/social/behance.svg", alt="behance-icon")
+			form.callback
+				.callback-inputs
+					input(type="text" placeholder="Name" class="callback-input")
+					input(type="email" placeholder="Email" class="callback-input")
+					
+				input(type="text" placeholder="Message" class="callback-message")
+				button(class="callback-submit") Send
 	footer.footer
 		.container 
 			img(src="img/logo.png").footer-logo
