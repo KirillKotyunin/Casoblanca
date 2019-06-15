@@ -2,20 +2,102 @@
 
 // 1200px
 @media screen and (max-width: $breakpoint-xl)
-	//
+	.container
+		width: $container-lg
 
 // 992px
 @media screen and (max-width: $breakpoint-lg)
-	//
-
+	.container
+		width: $container-md
+	.work-item
+		width: 48%
+	.clients-list
+		flex-flow: row wrap
+		justify-content: center
+		.clients-item
+			margin: rem(15px)
+	.about-list
+		flex-flow: row wrap
+		.about-item
+			width: 33%
+			margin-bottom: rem(10px)
+		.hiring-block
+			margin: 0 auto
+	.contacts
+		&::before
+			width: 42.5%
 // 768px
 @media screen and (max-width: $breakpoint-md)
-	//
-
+	.container
+		width: $container-sm
+	html
+		font-size: 14px
+	.about-list
+		.about-item
+			width: 48%
+		.hiring-block
+			margin: 0
+	.contacts
+		.container
+			flex-flow: column wrap
+			justify-content: center
+			align-items: center
+			.location
+				max-width: 100%
+				margin-bottom: rem(60px)
+				text-align: center
+			.callback
+				max-width: 100%
+		&::before
+			width: 100%
 // 576px
 @media screen and (max-width: $breakpoint-sm)
-	//
-
+	.container
+		width: 100%
+		padding: 0 15px
+	html
+		font-size: 10px
+	.section-descr
+		max-width: 100%
+	.works-categories-item
+		display: block
+		margin: 0
+		margin-bottom: rem(20px)
+		text-align: center
+	.works-list
+		flex-direction: column
+		align-items: center
+		.work-item
+			width: 100%
+			height: (370px)
+	.clients-list
+		flex-flow: column wrap
+		justify-content: center
+		align-items: center
+	.about-list
+		flex-direction: column
+		align-items: center
+		.about-item
+			width: 100%
+			height: 370px
+	.location-social
+		.location-social__item
+			width: 22px
+			img
+				display: block
+				max-width: 100%
+				width: 100%
+				height: 22px
+	.callback
+		.callback-inputs
+			flex-flow: column wrap
+			margin-bottom: rem(40px)
+			.callback-input
+				max-width: 100%
+				margin-bottom: rem(40px)
+	.footer-logo
+		width: 240px
+		height: auto
 // 480px
 @media screen and (max-width: $breakpoint-xs)
 	//
